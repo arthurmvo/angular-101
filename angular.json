@@ -72,10 +72,12 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "SecondTry:build:production"
+              "buildTarget": "SecondTry:build:production",
+              "host": "0.0.0.0"
             },
             "development": {
-              "buildTarget": "SecondTry:build:development"
+              "buildTarget": "SecondTry:build:development",
+              "host": "0.0.0.0"
             }
           },
           "defaultConfiguration": "development"
@@ -106,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
